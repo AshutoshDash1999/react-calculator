@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+body{
+    font-family: 'Orbitron', sans-serif;
+    background: #D1FAE5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outputScreen{
+    height: 50px;
+    width: 450px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: inset 5px 5px 13px #a1a1a1,
+            inset -5px -5px 13px #ffffff;
+    font-size: 2rem;
+    color: #a1a1a1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resultScreen{
+    margin-top: 10px;
+    height: 70px;
+    width: 450px;
+    font-size: 3rem;
+    background: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: inset 5px 5px 13px #a1a1a1,
+            inset -5px -5px 13px #ffffff; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keysGrid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 15px;
+    margin: 20px;
 }

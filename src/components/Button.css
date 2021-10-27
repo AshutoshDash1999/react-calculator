@@ -1,0 +1,18 @@
+.calculatorKey{
+    padding: 1rem;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 10px #b1b1b1,
+             -5px -5px 10px #ffffff;
+    border: 0px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.calculatorKey:active{
+    transform: scale(0.9);
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #b1b1b1,
+            inset -5px -5px 10px #ffffff;
+}
