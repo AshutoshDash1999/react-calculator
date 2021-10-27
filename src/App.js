@@ -34,10 +34,6 @@ const App = () => {
         setShowResult(array.reduce(subtractor));
     }
 
-    function operatorBtn(){  
-    }
-    
-
     function clickHandler(e) {
         var finalInput = showBtnValue + (e.target.innerText);
         setShowBtnValue(finalInput);
