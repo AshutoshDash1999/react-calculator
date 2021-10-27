@@ -30,7 +30,7 @@ const App = () => {
     }
     function subtract(array){
         var subtractor = (previousValue, currentValue) =>
-          Number(previousValue) + Number(currentValue);
+          Number(previousValue) - Number(currentValue);
         setShowResult(array.reduce(subtractor));
     }
 
@@ -66,11 +66,11 @@ const App = () => {
           <button onClick={clearBtn} className="calculatorKey">
             C
           </button>
-          <button onClick={clickHandler} className="calculatorKey">
-            (
+          <button  className="calculatorKey">
+            
           </button>
-          <button onClick={clickHandler} className="calculatorKey">
-            )
+          <button  className="calculatorKey">
+            
           </button>
           <button onClick={clickHandler} className="calculatorKey">
             x

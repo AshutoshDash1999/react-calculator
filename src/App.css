@@ -1,6 +1,6 @@
 body{
     font-family: 'Orbitron', sans-serif;
-    background: #D1FAE5;
+    background: rgb(196, 181, 253);
 }
 
 .container{
@@ -17,7 +17,7 @@ body{
     box-shadow: inset 5px 5px 13px #a1a1a1,
             inset -5px -5px 13px #ffffff;
     font-size: 2rem;
-    color: #424141;
+    color: #5c5b5b;
     padding: 1rem;
 }
 
