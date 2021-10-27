@@ -11,25 +11,20 @@ body{
 }
 
 .outputScreen{
-    height: 50px;
     width: 450px;
     background: #f1f1f1;
     border-radius: 12px;
     box-shadow: inset 5px 5px 13px #a1a1a1,
             inset -5px -5px 13px #ffffff;
     font-size: 2rem;
-    color: #a1a1a1;
+    color: #424141;
+    padding: 1rem;
 }
 
 .resultScreen{
-    margin-top: 10px;
-    height: 70px;
-    width: 450px;
-    font-size: 3rem;
-    background: #f1f1f1;
-    border-radius: 12px;
-    box-shadow: inset 5px 5px 13px #a1a1a1,
-            inset -5px -5px 13px #ffffff; 
+    text-align: end;
+    padding: 1rem;
+    color: #000;
 }
 
 .keysGrid{

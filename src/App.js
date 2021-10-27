@@ -13,17 +13,25 @@ const App = () => {
         setShowResult("");
     }
 
-    function sum(firstValue, secondValue){
-        setShowResult(Number(firstValue)  + Number(secondValue))
+    function sum(array){
+        var sumer = (previousValue, currentValue) =>
+          Number(previousValue) + Number(currentValue);
+        setShowResult(array.reduce(sumer));
     }
-    function multiply(firstValue, secondValue){
-        setShowResult(Number(firstValue)*Number(secondValue))
+    function multiply(array){
+        var multiplier = (previousValue, currentValue) =>
+          Number(previousValue)*Number(currentValue);
+        setShowResult(array.reduce(multiplier));
     }
-    function divide(firstValue, secondValue){
-        setShowResult(Number(firstValue)/Number(secondValue))
+    function divide(array){
+        var divider = (previousValue, currentValue) =>
+          Number(previousValue)/Number(currentValue);
+        setShowResult(array.reduce(divider));
     }
-    function subtract(firstValue, secondValue){
-        setShowResult(Number(firstValue)-Number(secondValue))
+    function subtract(array){
+        var subtractor = (previousValue, currentValue) =>
+          Number(previousValue) + Number(currentValue);
+        setShowResult(array.reduce(subtractor));
     }
 
     function operatorBtn(){  
@@ -35,13 +43,13 @@ const App = () => {
         setShowBtnValue(finalInput);
         // below code can be function
         if (finalInput.includes("+")) {
-          sum(finalInput.split("+")[0], finalInput.split("+")[1]);
+          sum(finalInput.split("+"));
         } else if (finalInput.includes("-")) {
-          subtract(finalInput.split("-")[0], finalInput.split("-")[1]);
+          subtract(finalInput.split("-"));
         } else if (finalInput.includes("x")) {
-          multiply(finalInput.split("x")[0], finalInput.split("x")[1]);
+          multiply(finalInput.split("x"));
         } else if (finalInput.includes("/")) {
-          divide(finalInput.split("/")[0], finalInput.split("/")[1]);
+          divide(finalInput.split("/"));
         } else {
           //
         }
@@ -54,11 +62,13 @@ const App = () => {
 
     return (
       <div className="container">
-        <div className="outputScreen">{showBtnValue}</div>
-        <div className="resultScreen">{showResult}</div>
+        <div className="outputScreen">
+          {showBtnValue}
+          <div className="resultScreen">{showResult}</div>
+        </div>
         <div className="keysGrid">
-          <button onClick="" className="calculatorKey">
-            AC
+          <button onClick={clearBtn} className="calculatorKey">
+            C
           </button>
           <button onClick={clickHandler} className="calculatorKey">
             (
@@ -105,18 +115,14 @@ const App = () => {
           <button onClick={clickHandler} className="calculatorKey">
             -
           </button>
-          <button onClick={clearBtn} className="calculatorKey">
-            C
-          </button>
+          <button className="calculatorKey"></button>
           <button onClick={clickHandler} className="calculatorKey">
             0
           </button>
           <button onClick={clickHandler} className="calculatorKey">
             .
           </button>
-          <button onClick={clickHandler} className="calculatorKey">
-            =
-          </button>
+          <button className="calculatorKey"></button>
         </div>
       </div>
     );
