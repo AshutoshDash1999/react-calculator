@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# React Calculator App
+
+A basic calculator app made using React.
+Try the live project [here](https://react-calculator-ashu.netlify.app/)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
