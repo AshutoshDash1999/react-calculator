@@ -2,6 +2,7 @@ import React from "react";
 import {useState} from "react";
 import "./App.css";
 import "./components/Button.css"
+import Footer from "./components/footer/Footer"
 
 const App = () => {
     const [showBtnValue, setShowBtnValue] = useState("");
@@ -119,6 +120,8 @@ const App = () => {
           </button>
           <button className="calculatorKey"></button>
         </div>
+
+        <Footer/>
       </div>
     );
 }
