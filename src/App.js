@@ -2,7 +2,6 @@ import React from "react";
 import {useState} from "react";
 import "./App.css";
 import "./components/Button.css"
-// import Button from "./components/Button"
 
 const App = () => {
     const [showBtnValue, setShowBtnValue] = useState("");
