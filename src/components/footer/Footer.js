@@ -9,20 +9,33 @@ export default function Footer(){
           <p>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/ashutoshdash1999/"
             >
               linkedin
             </a>
             &nbsp;
-            <a target="_blank" href="https://twitter.com/ashutoshdash99">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/ashutoshdash99"
+            >
               twitter
             </a>
             &nbsp;
-            <a target="_blank" href="https://github.com/AshutoshDash1999/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/AshutoshDash1999/"
+            >
               github
             </a>
             &nbsp;
-            <a target="_blank" href="mailto:dashashutosh1999@gmail.com">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:dashashutosh1999@gmail.com"
+            >
               gmail
             </a>
           </p>
