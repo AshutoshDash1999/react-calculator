@@ -14,19 +14,25 @@ const App = () => {
     }
 
     function sum(array){
-        var sumer = (previousValue, currentValue) =>
-          Number(previousValue) + Number(currentValue);
-        setShowResult(array.reduce(sumer));
+        var sum = 0;
+        for (var index = 0; index<array.length; index++){
+          sum += Number(array[index])
+        }
+        setShowResult(sum);
     }
     function multiply(array){
-        var multiplier = (previousValue, currentValue) =>
-          Number(previousValue)*Number(currentValue);
-        setShowResult(array.reduce(multiplier));
+        var multiply = 1;
+        for (var index = 0; index < array.length; index++) {
+          multiply *= Number(array[index]);
+        }
+        setShowResult(multiply);
     }
     function divide(array){
-        var divider = (previousValue, currentValue) =>
-          Number(previousValue)/Number(currentValue);
-        setShowResult(array.reduce(divider));
+        var divide = 1;
+        for (var index = 0; index < array.length; index++) {
+          divide /= Number(array[index]);
+        }
+        setShowResult(divide.toFixed(4));
     }
     function subtract(array){
         var subtractor = (previousValue, currentValue) =>
